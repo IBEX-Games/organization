@@ -1,4 +1,4 @@
 # TU Delft's IBEX-Games organization: its name for ibex (its games are
-# tudelft.games<game>) and for people. Its games are listed in games.yaml.
+# tudelft_games.<game>) and for people. Its games are listed in games.yaml.
 name: tudelft_games
 display_name: TU Delft Games
