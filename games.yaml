@@ -1,6 +1,6 @@
 # TU Delft's games: each game's name (its game.yaml's id) and the name of its
 # repository in the same GitHub organization (IBEX-Games).
-prisoner_dilemma: prisoner_dilemma
-simple_market: simple_market
+# prisoner_dilemma: prisoner_dilemma
+# simple_market: simple_market
 goods_market: goods_market
-futarchy: futarchy
+# futarchy: futarchy
