@@ -1,21 +1,27 @@
 # TU Delft's ibex-Games organization
 
-The repository named `organization` of the GitHub organization
-`IBEX-Games`: it makes `IBEX-Games` the ibex organization for 
-the simulation and experiments server of TU Delft.
+This repo makes the games listed in games.yaml findable for the IBEX-infrastructure.
+Through this repo, the IBEX team shares the games and components we build for simulations and experiments so they can be 
+inspected, adapted and reused. 
+With this repository, our 
 
-- `organization.yaml` gives the organization's name for ibex (`tudelft`:
+- `organization.yaml` gives the organization's name within the admin panel of the ibex server (`tudelft`:
   its games are `tudelft.<game>`) and for people ("TU Delft").
 - `games.yaml` lists its games, each by the name of its repository in the
   same GitHub organization (every game of the organization is one).
 
-A workspace that knows the organization (its `organizations.yaml`; the
-installer adds TU Delft to every new workspace, and `npx ibex organization
-add https://github.com/IBEX-Games` adds it to any other) lists its games
-on the discovery page (Discover games), and downloads one by cloning its
-repository, on its default branch, into the workspace's
-`games/tudelft/<game>`, installing it, certifying it and setting up its AI
-agents. Add only organizations you trust: downloading a game runs its code.
+An installation of the IBEX-server that knows this github-organization lists its games
+on the discovery page (Discover games). When you select a game in the discovery page,
+the server downloads its repository, on its default branch, into the workspace of the server,
+`games/tudelft/<game>`. After this download, it automatically installs it, certifies it and sets it up with its AI
+agents. 
+
+The installer for the IBEX libraries (https://github.com/IBEX-TUDelft/ibex-starting-point) 
+adds TU Delft to every new workspace, and running :
+`npx ibex organization add https://github.com/IBEX-Games` 
+within your working folder adds it to any other.
+
+Add only organizations you trust: downloading a game runs its code.
 
 | Game | Full name | Repository | AI agents |
 |---|---|---|---|
